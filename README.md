@@ -40,6 +40,10 @@
 * 맥락 : DeConv를 이용하여 임의의 뉴런의 그래디언트를 시각화하는 과정애서 사용하는 BP의 종류
 * 개념 : 일반적인 BP와는 달리 positive influence만 BP에 반영하여 관심 뉴런의 그래디언트를 보다 선명하게 시각화할 수 있다.
 
+### Grabcut Segmentation Algorithm
+* 맥락 : Visualization
+* 개념 : Saliency Map과 결합되어 labeled data 없이도 semantic segmentation을 할 수 있게 도와주는 일종의 segmentation algorighm이나, segmentation 품질은 떨어진다. 
+
 # N
 
 ### Neural Style
