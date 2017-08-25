@@ -3,15 +3,31 @@
 
 # A
 
+# Activation Map
+* 개념 : 특정 레이어에서 convolution과 activation 이 적용된 결과물을 Activation Volume (또는 feature Volume) 이라고 하는데, 그 중 한장의 slice가 바로 Activation Map. 즉 Map은 Volume의 일부 (한장)
+* 예시 : AlexNet의 conv5 레이어의 경우 128 x 13 x 13 의 Activation Volume 중 1개이니까 13 x 13
+* 관련 개념 : Activation Volume
+
+# Activation Volume
+* 개념 : 특정 레이어에서 convolution과 activation 이 적용된 결과물인 feature Volume. Activation Volume의 한장 한장 (즉 각각의 slice) 은 activation map이라고 한다. 
+* 예시 : AlexNet의 conv5 레이어의 경우 128 x 13 x 13
+* 관련 개념 : Activation Map
+
 ### Adversarial Example (Adversarial Attack)
 * 개념 : 어떤 이미지 내의 특정 클래스를 강화하는 방향으로 이미지의 최적화 (Optimiatioin to Image) 를 수행함으로써 해당 이미지의 클래스를 왜곡시키는 것.
 * 예시 : 입력값으로 스쿨버스의 이미지를 넣어주고 CNN를 돌리는데 엉뚱한 클래스 (예를 들어 타조) 의 그래디언트만 1로 하고 나머지들을 0으로 설정한 후에 BP를 해 주면 겉보기로는 스쿨버스이지만 타조로 분류하게 된다. 
 * 원인 : Neural network가 adversarial attack에 취약한 이유는 태생적인 선형성 (linear nature) 때문 (Ian Goodfellow, 2014) 이다. Deep learning이나 Convolutional Neural Network의 문제가 아니다. 더 나아가 이미지에 국한된 문제도 아니다. 음성 인식 등 Neural Network 를 사용하는 그 어떤 modality에서도 발생한다.
 
-
 ### Affine Layer
 * 맥락 : neural network
 * 개념 : 일반적으로 그냥 Fully Connected Layer 라고 생각하면 된다.
+* 발음 : [어화인]
+
+# C 
+
+### Convolutional Neural Network (CNN)
+* 참고 : http://xrds.acm.org/blog/2016/06/convolutional-neural-networks-cnns-illustrated-explanation/
+
 
 # D
 
