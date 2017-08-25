@@ -1,4 +1,5 @@
-# 딥러닝 실용 국어 사전 (Deep Learning Practical Glossary in Korean)
+# 딥러닝 실용 국어 사전
+## (Deep Learning Practical Glossary in Korean)
 이론적 설명보다는 실용적인 설명 기반의 딥러닝 사전입니다.
 
 ### Affine layer
