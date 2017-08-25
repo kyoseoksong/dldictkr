@@ -3,12 +3,12 @@
 
 # A
 
-# Activation Map
+### Activation Map
 * 개념 : 특정 레이어에서 convolution과 activation 이 적용된 결과물을 Activation Volume (또는 feature Volume) 이라고 하는데, 그 중 한장의 slice가 바로 Activation Map. 즉 Map은 Volume의 일부 (한장)
 * 예시 : AlexNet의 conv5 레이어의 경우 128 x 13 x 13 의 Activation Volume 중 1개이니까 13 x 13
 * 관련 개념 : Activation Volume
 
-# Activation Volume
+### Activation Volume
 * 개념 : 특정 레이어에서 convolution과 activation 이 적용된 결과물인 feature Volume. Activation Volume의 한장 한장 (즉 각각의 slice) 은 activation map이라고 한다. 
 * 예시 : AlexNet의 conv5 레이어의 경우 128 x 13 x 13
 * 관련 개념 : Activation Map
@@ -49,6 +49,10 @@
 
 # O
 
+### Occlusion experiment
+* 개념 : 이미지에서 도대체 어떤 픽셀이 classification decision에 영향을 주는 것인지 찾기 위해 masking을 활용하는 방법. 이미지의 부위별로 mask를 씌워가면서 특정 클래스의 확률이 얼마나 올라가거나 떨어지는 지를 heatmap으로 그려줌으로써 이를 눈으로 확인할 수 있다. Saliency Map과 유사한 방식이다. 
+* 연관 개념 : Saliency Map
+
 ### Optimization to Image
 * 연관 개념 : Saliency Map을 하는 과정, Deep Dream, Neural Style 모두 Optimization to Image의 일종
 * 맥락 : 임의의 클래스 점수를 최대화하는 이미지를 시각화하기 위해 해당 클래스의 스코어의 그래디언트만 1로 설정하고 나머지 클래스의 스코어의 그래디언트는 0으로 설정
@@ -58,4 +62,5 @@
 
 ### Saliency Map
 * 개념 : 이미지의 각 픽셀의 특성을 반영하도록 그린 맵 (또 하나의 이미지) 으로, 원본 이미지를 변형하거나 단순화하여 보다 의미 있거나 분석이 가능한 형태의 이미지 (맵) 으로 만들어 준것.
-* 연관 개념 : Optimization to Image, Deep Dream, Neural Style
+* 응용 : 이미지에서 도대체 어떤 픽셀이 classification decision에 영향을 주는 것인지 찾기 위해 이를 활용한다. Occlusion experiment와 유사한 방식이다. 
+* 연관 개념 : Optimization to Image, Deep Dream, Neural Style, Occlusion experiment
